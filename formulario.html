@@ -5,20 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <!-- Cambie las ruta del archivo CSS -->
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
   <title>Formulario</title>
 </head>
+
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
-
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+  <!-- Cambie de class formulario a id formulario -->
+  <form id="formulario"> 
+    <!-- Se agrego un label para nombre  y edad-->
+    <label for="name"> Nombre</label>
+    <input type="text" name="name" id="name">
     <br />
-    Edad <input type="number" name="age" id="age">
+    <label for="age">Edad </label>
+    <input type="number" name="age" id="age">
     <br />
 
-    Nacionalidad
+    <!-- Se agrego un label para Nacionalidad -->
+    <label for="nationality"> Nacionalidad</label>
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
@@ -31,10 +37,12 @@
 
   <div>
     <h2>Lista de invitados</h2>
+    <div id="lista-de-invitados"></div>
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <!-- Cambie la direccion de formulario js -->
+  <script src="formulario.js"></script>
 </body>
 
 </html>
